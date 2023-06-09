@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- reset.css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- styles.css -->
+        <!-- <link rel="stylesheet" href="./assets/css/styles.css" /> -->
+        <!-- responsive -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <!-- product.css -->
+        <!-- <link rel="stylesheet" href="./assets/css/product.css" /> -->
+        <!-- company.css -->
+        <link rel="stylesheet" href="./assets/css/company.css" />
+        <!-- responsive -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <!-- font-google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
+        <!-- icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Togi</title>
+    </head>
+    <body>
+        <!-- pc -->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="header-boby">
+                        <!-- mobile -->
+
+                        <label for="check" class="menu-mobile" hidden>
+                            <i
+                                class="fa-solid fa-bars fa-xl"
+                                style="color: #fff"
+                            ></i>
+                        </label>
+
+                        <!-- ----- -->
+                        <a href="./index.html">
+                            <img src="./assets/img/Togi.png" alt="togi" />
+                        </a>
+                        <nav class="nav-list">
+                            <ul>
+                                <li class="nav-item">
+                                    <input
+                                        type="checkbox"
+                                        id="address"
+                                        hidden
+                                    />
+                                    <label for="address" href="#!">
+                                        <p>Products</p>
+
+                                        <div class="product-item">
+                                            <a href="./product.html"
+                                                >Unlayer Studio</a
+                                            >
+                                            <p>
+                                                Full featured email design
+                                                studio for designers and
+                                                agencies
+                                            </p>
+
+                                            <a href="./product.html"
+                                                >Unlayer Embed</a
+                                            >
+                                            <p>
+                                                Embeddable drag & drop editor
+                                                for developers and SaaS
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./price.html"> Pricing </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!"> Company </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./blog.html"> Blog </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header-btn btn">
+                            <button>
+                                <a href="#!">log in</a>
+                            </button>
+                            <button>
+                                <a href="#!">get started</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- tablet and mobile -->
+        <header class="mobile-header">
+            <input type="checkbox" id="check" hidden />
+            <label for="check">
+                <div class="drawer">
+                    <!-- top -->
+                    <div class="menu-mobile__top" hidden>
+                        <a href="#!">
+                            <img src="./assets/img/Togi.png" alt="togi" />
+                        </a>
+
+                        <div class="close">
+                            <i
+                                class="fa-solid fa-xmark fa-2xl"
+                                style="color: rgba(255, 255, 255, 1)"
+                            ></i>
+                        </div>
+                    </div>
+                    <!-- navbar -->
+
+                    <ul hidden>
+                        <li class="nav-item__mobile">
+                            <input type="checkbox" id="address-mobile" hidden />
+                            <label for="address-mobile" href="#!">
+                                <p>Products</p>
+
+                                <div class="product-item-mobile" hidden>
+                                    <a href="./product.html">Unlayer Studio</a>
+                                    <p>
+                                        Full featured email design studio for
+                                        designers and agencies
+                                    </p>
+
+                                    <a href="./product.html">Unlayer Embed</a>
+                                    <p>
+                                        Embeddable drag & drop editor for
+                                        developers and SaaS
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nav-item__mobile">
+                            <a href="./price.html"> Pricing </a>
+                        </li>
+                        <li class="nav-item__mobile">
+                            <input
+                                type="checkbox"
+                                id="checkcompany-mobile"
+                                class="company-select"
+                                hidden
+                            />
+                            <label for="checkcompany-mobile">
+                                <p>Company</p>
+
+                                <div class="company-item-mobile" hidden>
+                                    <a href="./company.html">Careers</a>
+                                    <a href="./company.html">About</a>
+                                    <a href="./company.html">Contact</a>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nav-item__mobile">
+                            <a href="./blog.html"> Blog </a>
+                        </li>
+                    </ul>
+                    <div class="header-btn btn" hidden>
+                        <button>
+                            <a href="#!">log in</a>
+                        </button>
+                        <button>
+                            <a href="#!">get started</a>
+                        </button>
+                    </div>
+                </div>
+            </label>
+        </header>
+        <main>
+            <!-- hero -->
+            <section class="hero">
+                <div class="container">
+                    <!-- pc -->
+                    <div class="hero-body company-body">
+                        <!-- social -->
+                        <div class="hero-body__media company__media">
+                            <img src="./assets/img/company-img.jpg" alt="" />
+                        </div>
+                        <!-- content -->
+                        <div class="hero-content product-content">
+                            <h1
+                                class="hero-header product-header company-header"
+                            >
+                                An inclusive workplace where ideas thrive.
+                            </h1>
+                            <p class="hero-desc product-desc company-desc">
+                                We are hiring across all departments: Product,
+                                Engineering, Marketing, Sales and Customer
+                                Support
+                            </p>
+                            <div class="hero-btn btn">
+                                <button>
+                                    <a href="#!">View Open Positions</a>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- media -->
+                    </div>
+
+                    <!-- tablet and mobile -->
+                </div>
+            </section>
+
+            <!-- benefit -->
+            <section class="benefit">
+                <div class="container">
+                    <div class="benefit-body">
+                        <h1 class="hero-header product-header">
+                            Benefits galore when you join
+                        </h1>
+                        <p class="hero-desc product-desc">
+                            We offer competitive salary, along with great perks
+                            and benefits
+                        </p>
+
+                        <!-- benefit-media -->
+                        <div class="benefit-media__list">
+                            <!-- benefit-media__item-01 -->
+                            <div class="benefit-media__item">
+                                <img
+                                    src="./assets/img/company-icon-01.svg"
+                                    alt=""
+                                />
+                                <p>Competitive Salary</p>
+                            </div>
+
+                            <!-- benefit-media__item-02 -->
+                            <div class="benefit-media__item">
+                                <img
+                                    src="./assets/img/company-icon-02.svg"
+                                    alt=""
+                                />
+                                <p>Daily Meals</p>
+                            </div>
+
+                            <!-- benefit-media__item-03 -->
+                            <div class="benefit-media__item">
+                                <img
+                                    src="./assets/img/company-icon-03.svg"
+                                    alt=""
+                                />
+                                <p>Free Equipment</p>
+                            </div>
+
+                            <!-- benefit-media__item-034-->
+                            <div class="benefit-media__item">
+                                <img
+                                    src="./assets/img/company-icon-04.svg"
+                                    alt=""
+                                />
+                                <p>Team Retreats</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- email -capture -->
+
+            <!-- returning -->
+
+            <!-- visitor -->
+
+            <!-- popups -->
+
+            <!-- WORK PROCESS -->
+
+            <!--teamwork -->
+
+            <!-- application -->
+
+            <!-- brand -->
+            <section class="brand">
+                <div class="container">
+                    <div class="brand-body">
+                        <!-- content -->
+                        <p class="brand-body__title">
+                            Standards & Technology Trusted By:
+                        </p>
+                        <div class="brand-list">
+                            <img src="./assets/img/brand-01.png" alt="" />
+                            <img src="./assets/img/brand-02.png" alt="" />
+                            <img src="./assets/img/brand-03.png" alt="" />
+                            <img src="./assets/img/brand-04.png" alt="" />
+                            <img src="./assets/img/brand-05.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- template -->
+            <section class="template">
+                <div class="container">
+                    <div class="template-body">
+                        <!-- content -->
+                        <div class="template-content">
+                            <h2 class="main-header template__header">
+                                Should we design your first popup?
+                            </h2>
+                            <p class="main-desc template-desc">
+                                Pick a template, customize as you need, and
+                                integrate with your other marketing tools.
+                            </p>
+                            <div class="hero-btn btn">
+                                <button>
+                                    <a href="#!">Start your free trial</a>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- media -->
+                        <div class="template-media">
+                            <img src="./assets/img/template-img.png" alt="" />
+                        </div>
+                        <!-- decoration -->
+                        <div class="template-decor">
+                            <img src="./assets/img/template-decor.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer">
+                <div class="container">
+                    <div class="footer-body">
+                        <a href="#!">
+                            <img src="./assets/img/Togi.png" alt="togi" />
+                        </a>
+
+                        <nav class="nav-list">
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="#!"> Products </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!"> Pricing </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!"> About </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!"> Help </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="copyright">
+                            © 2022 UIHUT | All Right Reserved
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

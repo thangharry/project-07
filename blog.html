@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- reset.css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- styles.css -->
+        <!-- <link rel="stylesheet" href="./assets/css/styles.css" /> -->
+
+        <!-- product.css -->
+        <!-- <link rel="stylesheet" href="./assets/css/product.css" /> -->
+        <!-- blog -->
+        <link rel="stylesheet" href="./assets/css/blog.css" />
+        <!-- responsive -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <!-- font-google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
+        <!-- icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Togi</title>
+    </head>
+    <body>
+        <!-- pc -->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="header-boby">
+                        <!-- mobile -->
+
+                        <label for="check" class="menu-mobile" hidden>
+                            <i
+                                class="fa-solid fa-bars fa-xl"
+                                style="color: #fff"
+                            ></i>
+                        </label>
+
+                        <!-- ----- -->
+                        <a href="./index.html">
+                            <img src="./assets/img/Togi.png" alt="togi" />
+                        </a>
+                        <nav class="nav-list">
+                            <ul>
+                                <li class="nav-item">
+                                    <input
+                                        type="checkbox"
+                                        id="address"
+                                        hidden
+                                    />
+                                    <label for="address" href="#!">
+                                        <p>Products</p>
+
+                                        <div class="product-item">
+                                            <a href="./product.html"
+                                                >Unlayer Studio</a
+                                            >
+                                            <p>
+                                                Full featured email design
+                                                studio for designers and
+                                                agencies
+                                            </p>
+
+                                            <a href="./product.html"
+                                                >Unlayer Embed</a
+                                            >
+                                            <p>
+                                                Embeddable drag & drop editor
+                                                for developers and SaaS
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./price.html"> Pricing </a>
+                                </li>
+                                <li class="nav-item">
+                                    <input
+                                        type="checkbox"
+                                        id="checkcompany"
+                                        class="company-select"
+                                        hidden
+                                    />
+                                    <label for="checkcompany">
+                                        <p>Company</p>
+
+                                        <div class="company-item">
+                                            <a href="./company.html">Careers</a>
+                                            <a href="./company.html">About</a>
+                                            <a href="./company.html">Contact</a>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!"> Blog </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header-btn btn">
+                            <button>
+                                <a href="#!">log in</a>
+                            </button>
+                            <button>
+                                <a href="#!">get started</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- tablet and mobile -->
+        <header class="mobile-header">
+            <input type="checkbox" id="check" hidden />
+            <label for="check">
+                <div class="drawer">
+                    <!-- top -->
+                    <div class="menu-mobile__top" hidden>
+                        <a href="./index.html">
+                            <img src="./assets/img/Togi.png" alt="togi" />
+                        </a>
+
+                        <div class="close">
+                            <i
+                                class="fa-solid fa-xmark fa-2xl"
+                                style="color: rgba(255, 255, 255, 1)"
+                            ></i>
+                        </div>
+                    </div>
+                    <!-- navbar -->
+
+                    <ul hidden>
+                        <li class="nav-item__mobile">
+                            <input type="checkbox" id="address-mobile" hidden />
+                            <label for="address-mobile" href="#!">
+                                <p>Products</p>
+
+                                <div class="product-item-mobile" hidden>
+                                    <a href="./product.html">Unlayer Studio</a>
+                                    <p>
+                                        Full featured email design studio for
+                                        designers and agencies
+                                    </p>
+
+                                    <a href="./product.html">Unlayer Embed</a>
+                                    <p>
+                                        Embeddable drag & drop editor for
+                                        developers and SaaS
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nav-item__mobile">
+                            <a href="./price.html"> Pricing </a>
+                        </li>
+                        <li class="nav-item__mobile">
+                            <input
+                                type="checkbox"
+                                id="checkcompany-mobile"
+                                class="company-select"
+                                hidden
+                            />
+                            <label for="checkcompany-mobile">
+                                <p>Company</p>
+
+                                <div class="company-item-mobile" hidden>
+                                    <a href="./company.html">Careers</a>
+                                    <a href="./company.html">About</a>
+                                    <a href="./company.html">Contact</a>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nav-item__mobile">
+                            <a href="#!"> Blog </a>
+                        </li>
+                    </ul>
+                    <div class="header-btn btn" hidden>
+                        <button>
+                            <a href="#!">log in</a>
+                        </button>
+                        <button>
+                            <a href="#!">get started</a>
+                        </button>
+                    </div>
+                </div>
+            </label>
+        </header>
+        <main>
+            <!-- hero -->
+            <section class="hero">
+                <div class="container">
+                    <!-- pc -->
+                    <div class="hero-body">
+                        <!-- social -->
+
+                        <!-- content -->
+                        <div class="hero-content product-content">
+                            <h1 class="hero-header product-header">
+                                Togi Blogs
+                            </h1>
+                            <p class="hero-desc product-desc">
+                                Stories from the community powering the
+                                internet’s visuals
+                            </p>
+                        </div>
+                        <!-- media -->
+                    </div>
+
+                    <!-- tablet and mobile -->
+                </div>
+            </section>
+
+            <!-- featured -->
+            <section class="featured">
+                <div class="container">
+                    <div class="featured-body">
+                        <h3 class="blog-title">Featured</h3>
+                        <div class="feature-body__list">
+                            <!-- item-01 -->
+                            <div class="featured-body__item">
+                                <img
+                                    src="./assets/img/featured--01.jpg"
+                                    alt=""
+                                />
+
+                                <span class="feature-body__item-day">
+                                    August 26, 2022
+                                </span>
+                                <p class="featured-body__item-desc">
+                                    The Difference Between Web Design and
+                                    Graphic Design | UIHUT
+                                </p>
+                                <p class="featured-body__item-time">
+                                    Reading time about 7 min
+                                </p>
+                            </div>
+
+                            <!-- item-02 -->
+                            <div class="featured-body__item">
+                                <img
+                                    src="./assets/img/featured--02.jpg"
+                                    alt=""
+                                />
+
+                                <span class="feature-body__item-day">
+                                    August 12, 2022
+                                </span>
+                                <p class="featured-body__item-desc">
+                                    How to Use a Color Wheel - The Magic Of
+                                    Color Theory
+                                </p>
+                                <p class="featured-body__item-time">
+                                    Reading time about 5 min
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- latest from the team-->
+            <section class="clip">
+                <div class="container">
+                    <div class="clip-body">
+                        <h3 class="blog-title clip-title">
+                            Latest From the team
+                        </h3>
+                        <div class="clip-list">
+                            <!-- item-01 -->
+                            <div class="featured-body__item clip__item">
+                                <img
+                                    src="./assets/img/img-blog-01.jpg"
+                                    alt=""
+                                />
+
+                                <span class="feature-body__item-day clip-day">
+                                    August 26, 2022
+                                </span>
+                                <p class="featured-body__item-desc clip-desc">
+                                    How to Use a Color Wheel The Magic Of
+                                    Color...
+                                </p>
+                                <p class="featured-body__item-time clip-time">
+                                    Reading time about 7 min
+                                </p>
+                            </div>
+
+                            <!-- item-02 -->
+                            <div class="featured-body__item clip__item">
+                                <img
+                                    src="./assets/img/img-blog-02.jpg"
+                                    alt=""
+                                />
+
+                                <span class="feature-body__item-day clip-day">
+                                    August 05, 2022
+                                </span>
+                                <p class="featured-body__item-desc clip-desc">
+                                    How to Become a Professional Front-End...
+                                </p>
+                                <p class="featured-body__item-time clip-time">
+                                    Reading time about 10 min
+                                </p>
+                            </div>
+
+                            <!-- item-03 -->
+                            <div class="featured-body__item clip__item">
+                                <img
+                                    src="./assets/img/img-blog-03.jpg"
+                                    alt=""
+                                />
+
+                                <span class="feature-body__item-day clip-day">
+                                    August 20, 2022
+                                </span>
+                                <p class="featured-body__item-desc clip-desc">
+                                    10 Best UX Design Certification Programs...
+                                </p>
+                                <p class="featured-body__item-time clip-time">
+                                    Reading time about 8 min
+                                </p>
+                            </div>
+
+                            <!-- item-04 -->
+                            <div class="featured-body__item clip__item">
+                                <img
+                                    src="./assets/img/img-blog-04.jpg"
+                                    alt=""
+                                />
+
+                                <span class="feature-body__item-day clip-day">
+                                    August 26, 2022
+                                </span>
+                                <p class="featured-body__item-desc clip-desc">
+                                    How to Use a Color Wheel The Magic Of
+                                    Color...
+                                </p>
+                                <p class="featured-body__item-time clip-time">
+                                    Reading time about 7 min
+                                </p>
+                            </div>
+
+                            <!-- item-05 -->
+                            <div class="featured-body__item clip__item">
+                                <img
+                                    src="./assets/img/img-blog-05.jpg"
+                                    alt=""
+                                />
+
+                                <span class="feature-body__item-day clip-day">
+                                    August 05, 2022
+                                </span>
+                                <p class="featured-body__item-desc clip-desc">
+                                    How to Become a Professional Front-End...
+                                </p>
+                                <p class="featured-body__item-time clip-time">
+                                    Reading time about 10 min
+                                </p>
+                            </div>
+
+                            <!-- item-06 -->
+                            <div class="featured-body__item clip__item">
+                                <img
+                                    src="./assets/img/img-blog-06.jpg"
+                                    alt=""
+                                />
+
+                                <span class="feature-body__item-day clip-day">
+                                    August 20, 2022
+                                </span>
+                                <p class="featured-body__item-desc clip-desc">
+                                    10 Best UX Design Certification Programs...
+                                </p>
+                                <p class="featured-body__item-time clip-time">
+                                    Reading time about 8 min
+                                </p>
+                            </div>
+
+                            <!-- item-07 -->
+                            <div class="featured-body__item clip__item">
+                                <img
+                                    src="./assets/img/img-blog-07.jpg"
+                                    alt=""
+                                />
+
+                                <span class="feature-body__item-day clip-day">
+                                    August 26, 2022
+                                </span>
+                                <p class="featured-body__item-desc clip-desc">
+                                    How to Use a Color Wheel The Magic Of
+                                    Color...
+                                </p>
+                                <p class="featured-body__item-time clip-time">
+                                    Reading time about 7 min
+                                </p>
+                            </div>
+
+                            <!-- item-08 -->
+                            <div class="featured-body__item clip__item">
+                                <img
+                                    src="./assets/img/img-blog-08.jpg"
+                                    alt=""
+                                />
+
+                                <span class="feature-body__item-day clip-day">
+                                    August 05, 2022
+                                </span>
+                                <p class="featured-body__item-desc clip-desc">
+                                    How to Become a Professional Front-End...
+                                </p>
+                                <p class="featured-body__item-time clip-time">
+                                    Reading time about 10 min
+                                </p>
+                            </div>
+
+                            <!-- item-09 -->
+                            <div class="featured-body__item clip__item">
+                                <img
+                                    src="./assets/img/img-blog-09.jpg"
+                                    alt=""
+                                />
+
+                                <span class="feature-body__item-day clip-day">
+                                    August 20, 2022
+                                </span>
+                                <p class="featured-body__item-desc clip-desc">
+                                    10 Best UX Design Certification Programs...
+                                </p>
+                                <p class="featured-body__item-time clip-time">
+                                    Reading time about 8 min
+                                </p>
+                            </div>
+
+                            <!-- item-010 -->
+                            <div class="featured-body__item clip__item">
+                                <img
+                                    src="./assets/img/img-blog-010.jpg"
+                                    alt=""
+                                />
+
+                                <span class="feature-body__item-day clip-day">
+                                    August 26, 2022
+                                </span>
+                                <p class="featured-body__item-desc clip-desc">
+                                    How to Use a Color Wheel The Magic Of
+                                    Color...
+                                </p>
+                                <p class="featured-body__item-time clip-time">
+                                    Reading time about 7 min
+                                </p>
+                            </div>
+
+                            <!-- item-011 -->
+                            <div class="featured-body__item clip__item">
+                                <img
+                                    src="./assets/img/img-blog-011.jpg"
+                                    alt=""
+                                />
+
+                                <span class="feature-body__item-day clip-day">
+                                    August 05, 2022
+                                </span>
+                                <p class="featured-body__item-desc clip-desc">
+                                    How to Become a Professional Front-End...
+                                </p>
+                                <p class="featured-body__item-time clip-time">
+                                    Reading time about 10 min
+                                </p>
+                            </div>
+
+                            <!-- item-012 -->
+                            <div class="featured-body__item clip__item">
+                                <img
+                                    src="./assets/img/img-blog-012.jpg"
+                                    alt=""
+                                />
+
+                                <span class="feature-body__item-day clip-day">
+                                    August 20, 2022
+                                </span>
+                                <p class="featured-body__item-desc clip-desc">
+                                    10 Best UX Design Certification Programs...
+                                </p>
+                                <p class="featured-body__item-time clip-time">
+                                    Reading time about 8 min
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-btn btn clip-btn">
+                        <button href="./blog-info.html">
+                            <a href="./blog-info.html">More</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- email -capture -->
+
+            <!-- returning -->
+
+            <!-- visitor -->
+
+            <!-- popups -->
+
+            <!-- WORK PROCESS -->
+
+            <!--teamwork -->
+
+            <!-- application -->
+
+            <!-- brand -->
+            <section class="brand">
+                <div class="container">
+                    <div class="brand-body">
+                        <!-- content -->
+                        <p class="brand-body__title">
+                            Standards & Technology Trusted By:
+                        </p>
+                        <div class="brand-list">
+                            <img src="./assets/img/brand-01.png" alt="" />
+                            <img src="./assets/img/brand-02.png" alt="" />
+                            <img src="./assets/img/brand-03.png" alt="" />
+                            <img src="./assets/img/brand-04.png" alt="" />
+                            <img src="./assets/img/brand-05.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- template -->
+            <section class="template">
+                <div class="container">
+                    <div class="template-body">
+                        <!-- content -->
+                        <div class="template-content">
+                            <h2 class="main-header template__header">
+                                Should we design your first popup?
+                            </h2>
+                            <p class="main-desc template-desc">
+                                Pick a template, customize as you need, and
+                                integrate with your other marketing tools.
+                            </p>
+                            <div class="hero-btn btn">
+                                <button>
+                                    <a href="#!">Start your free trial</a>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- media -->
+                        <div class="template-media">
+                            <img src="./assets/img/template-img.png" alt="" />
+                        </div>
+                        <!-- decoration -->
+                        <div class="template-decor">
+                            <img src="./assets/img/template-decor.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer">
+                <div class="container">
+                    <div class="footer-body">
+                        <a href="#!">
+                            <img src="./assets/img/Togi.png" alt="togi" />
+                        </a>
+
+                        <nav class="nav-list">
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="#!"> Products </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!"> Pricing </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!"> About </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!"> Help </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="copyright">
+                            © 2022 UIHUT | All Right Reserved
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

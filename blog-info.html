@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- reset.css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- styles.css -->
+        <!-- <link rel="stylesheet" href="./assets/css/styles.css" /> -->
+
+        <!-- product.css -->
+        <!-- <link rel="stylesheet" href="./assets/css/product.css" /> -->
+        <!-- blog-info -->
+        <link rel="stylesheet" href="./assets/css/blog-info.css" />
+        <!-- responsive -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <!-- font-google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
+        <!-- icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Togi</title>
+    </head>
+    <body>
+        <!-- pc -->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="header-boby">
+                        <!-- mobile -->
+
+                        <label for="check" class="menu-mobile" hidden>
+                            <i
+                                class="fa-solid fa-bars fa-xl"
+                                style="color: #fff"
+                            ></i>
+                        </label>
+
+                        <!-- ----- -->
+                        <a href="./index.html">
+                            <img src="./assets/img/Togi.png" alt="togi" />
+                        </a>
+                        <nav class="nav-list">
+                            <ul>
+                                <li class="nav-item">
+                                    <input
+                                        type="checkbox"
+                                        id="address"
+                                        hidden
+                                    />
+                                    <label for="address" href="#!">
+                                        <p>Products</p>
+
+                                        <div class="product-item">
+                                            <a href="./product.html"
+                                                >Unlayer Studio</a
+                                            >
+                                            <p>
+                                                Full featured email design
+                                                studio for designers and
+                                                agencies
+                                            </p>
+
+                                            <a href="./product.html"
+                                                >Unlayer Embed</a
+                                            >
+                                            <p>
+                                                Embeddable drag & drop editor
+                                                for developers and SaaS
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./price.html"> Pricing </a>
+                                </li>
+                                <li class="nav-item">
+                                    <input
+                                        type="checkbox"
+                                        id="checkcompany"
+                                        class="company-select"
+                                        hidden
+                                    />
+                                    <label for="checkcompany">
+                                        <p>Company</p>
+
+                                        <div class="company-item">
+                                            <a href="./company.html">Careers</a>
+                                            <a href="./company.html">About</a>
+                                            <a href="./company.html">Contact</a>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./blog.html"> Blog </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header-btn btn">
+                            <button>
+                                <a href="#!">log in</a>
+                            </button>
+                            <button>
+                                <a href="#!">get started</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- tablet and mobile -->
+        <header class="mobile-header">
+            <input type="checkbox" id="check" hidden />
+            <label for="check">
+                <div class="drawer">
+                    <!-- top -->
+                    <div class="menu-mobile__top" hidden>
+                        <a href="./index.html">
+                            <img src="./assets/img/Togi.png" alt="togi" />
+                        </a>
+
+                        <div class="close">
+                            <i
+                                class="fa-solid fa-xmark fa-2xl"
+                                style="color: rgba(255, 255, 255, 1)"
+                            ></i>
+                        </div>
+                    </div>
+                    <!-- navbar -->
+
+                    <ul hidden>
+                        <li class="nav-item__mobile">
+                            <input type="checkbox" id="address-mobile" hidden />
+                            <label for="address-mobile" href="#!">
+                                <p>Products</p>
+
+                                <div class="product-item-mobile" hidden>
+                                    <a href="./product.html">Unlayer Studio</a>
+                                    <p>
+                                        Full featured email design studio for
+                                        designers and agencies
+                                    </p>
+
+                                    <a href="./product.html">Unlayer Embed</a>
+                                    <p>
+                                        Embeddable drag & drop editor for
+                                        developers and SaaS
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nav-item__mobile">
+                            <a href="./price.html"> Pricing </a>
+                        </li>
+                        <li class="nav-item__mobile">
+                            <input
+                                type="checkbox"
+                                id="checkcompany-mobile"
+                                class="company-select"
+                                hidden
+                            />
+                            <label for="checkcompany-mobile">
+                                <p>Company</p>
+
+                                <div class="company-item-mobile" hidden>
+                                    <a href="./company.html">Careers</a>
+                                    <a href="./company.html">About</a>
+                                    <a href="./company.html">Contact</a>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nav-item__mobile">
+                            <a href="#!"> Blog </a>
+                        </li>
+                    </ul>
+                    <div class="header-btn btn" hidden>
+                        <button>
+                            <a href="#!">log in</a>
+                        </button>
+                        <button>
+                            <a href="#!">get started</a>
+                        </button>
+                    </div>
+                </div>
+            </label>
+        </header>
+        <main>
+            <!-- hero -->
+            <section class="hero">
+                <div class="container">
+                    <!-- pc -->
+                    <div class="hero-body blog-info-body">
+                        <!-- social -->
+                        <span class="hero-body__day"
+                            >Announcements · May 24, 2022</span
+                        >
+                        <!-- content -->
+                        <div class="hero-content product-content">
+                            <h1 class="hero-header product-header">
+                                How Editing Can Transform an Image
+                            </h1>
+                            <p class="hero-desc product-desc">
+                                The importance of editing from Unsplash experts:
+                                Simone Hutsch, Philipp Pilz and Lerone Pieters.
+                            </p>
+                        </div>
+                        <!-- media -->
+                        <div class="hero-avatar">
+                            <img src="./assets/img/avatar-1.jpg" alt="" />
+                            <span>Alex Begin</span>
+                        </div>
+
+                        <div class="school-body">
+                            <img src="./assets/img/school.jpg" alt="" />
+                        </div>
+                    </div>
+
+                    <!-- tablet and mobile -->
+                </div>
+            </section>
+
+            <section class="paragraph">
+                <div class="container">
+                    <div class="paragraph-body">
+                        <p>
+                            A lot of work goes into taking a photograph. Before
+                            the inevitable ‘click’ — chances are you spent time
+                            planning what gear you’d bring, checking the weather
+                            conditions for the day, experimenting with camera
+                            settings, and finding the perfect framing for your
+                            shot. But what happens next is equally
+                            transformative.
+                        </p>
+                        <p>
+                            Editing. Some photographers love it, many simply put
+                            up with it — but the reality is: editing has the
+                            power to elevate and enhance what you’ve worked hard
+                            to capture. We spoke with three Unsplash
+                            contributors about all things editing — from their
+                            top tips for beginners looking to improve their
+                            skills, to their approach to the editing process.
+                        </p>
+                        <p>
+                            <b>Simone Hutsch :</b> is a graphic designer from
+                            Berlin, Germany currently living in London, UK.
+                            While photography was always a part of her studies,
+                            she only really got into architecture photography
+                            after she graduated. It served as a creative outlet.
+                            She says, “I first started photography as a personal
+                            creative project outside of work, and that’s still
+                            the case. I see this as a journey, and what matters
+                            to me is that every day I get a tiny bit better and
+                            truly enjoy what I’m doing.”
+                        </p>
+
+                        <p>
+                            <b>Philipp Pilz :</b> is also a designer. But for
+                            him, photography has been part of his life since
+                            childhood. He first recalls taking photos of cars as
+                            a child with a “cheap plastic film camera” before
+                            taking party pictures in clubs as a teenager. While
+                            he’s been photographing for about 20 years now, it
+                            was only when he turned to nature in the last four
+                            years that he believes truly found his style. Now,
+                            he travels through Europe in his camper van in
+                            search of exciting motifs and wild sceneries.
+                        </p>
+                        <p>
+                            <b>Lerone Pieters :</b> first took up photography as
+                            a hobby as a teenager, before getting more serious
+                            about it thanks to encouragement from his friends
+                            and family, as well as an ambition and drive to
+                            improve his skills. He says, “I became increasingly
+                            interested in finding my niche and eventually
+                            pushing past my comfort zone.” Today, he focuses on
+                            street photography and portraits.
+                        </p>
+                    </div>
+
+                    <div class="media-blog-info">
+                        <img src="./assets/img/img-blog-01.jpg" alt="" />
+                        <img src="./assets/img/img-blog-02.jpg" alt="" />
+                        <img src="./assets/img/img-blog-03.jpg" alt="" />
+                    </div>
+
+                    <div class="content-blog-info">
+                        <h4 class="blog-info__title">The Editing Process</h4>
+                        <p>
+                            <b>Philipp typically :</b> works in Adobe Lightroom,
+                            and in Photoshop on rare occaision. His editing
+                            process typically goes something like this: “The
+                            first thing I do is apply the color look to my
+                            images. This is a custom preset that I developed and
+                            refined over a long process. This setting includes
+                            pretty much all the controls that are available in
+                            Adobe Lightroom: Color, Calibration, Tone Curves,
+                            and so on. After that comes the local adjustments —
+                            bringing out certain areas and darkening others
+                            again. Finally, I clean up the image, removing
+                            anything that might interfere with the view of the
+                            subject.”
+                        </p>
+                        <p>
+                            With Simone, her retouching process begins before
+                            reaching her computer. She explains, “My retouching
+                            process requires quite a lot of imagination and
+                            creativity, before I start, I make sure I’m in the
+                            right headspace: I would go for a long relaxing bike
+                            ride before or I’d put my favourite playlist on.”
+                        </p>
+                        <p>
+                            When it’s time to sit down and edit, for Simone,
+                            it’s all about experimentation. She explains, “I try
+                            a few different edits on one photo
+                            (colours/composition, etc.) and I always consider
+                            the bigger picture before I decide on the final
+                            edit.” She uses Photoshop because of the “freedom it
+                            provides.”
+                        </p>
+                        <p>
+                            “It’s a process of playing around, because only when
+                            you start to play with it can you let your creative
+                            mind be free. For example, instead of just cutting
+                            out a whole building from the background, I’ll take
+                            a facade, reflect it, or perspective-transform it in
+                            order to distort the layer and give it the
+                            perspective of receding into the distance. I’ll also
+                            cut out one story of a building and duplicate it
+                            multiple times instead of simply showing all the
+                            stories.”
+                        </p>
+                    </div>
+
+                    <div class="content-blog-info content-blog-info2">
+                        <h4 class="blog-info__title blog-info__title2">
+                            Learn to love the editing process
+                        </h4>
+                        <p>
+                            Ultimately, the key to enjoying editing? Embracing
+                            it for what it is. For Simone, what she loves most
+                            is “the contrast of being outside in the real world
+                            and then diving into the virtual ‘Photoshop
+                            Universe’.”
+                        </p>
+                        <p>
+                            Philipp also enjoys the contrast between photography
+                            and editing. In fact, he almost prefers it to taking
+                            the photos themselves. “It probably has something to
+                            do with the convenience of sitting at home in an
+                            armchair rather than setting the alarm for 4am to
+                            photograph the sunrise on the French cliffs.”
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="social-blog">
+                <div class="container">
+                    <div class="social-blog__body">
+                        <span class="social-blog__title">Share article</span>
+                        <div class="social-blog__list">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="1em"
+                                viewBox="0 0 512 512"
+                            >
+                                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #1da1f2;
+                                    }
+                                </style>
+                                <path
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                />
+                            </svg>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="1em"
+                                viewBox="0 0 320 512"
+                            >
+                                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #1da1f2;
+                                    }
+                                </style>
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                                />
+                            </svg>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="1em"
+                                viewBox="0 0 448 512"
+                            >
+                                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #1da1f2;
+                                    }
+                                </style>
+                                <path
+                                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="img-blog">
+                <div class="container">
+                    <div class="clip-list">
+                        <!-- item-01 -->
+                        <div class="featured-body__item clip__item">
+                            <img src="./assets/img/img-blog-05.jpg" alt="" />
+
+                            <span class="feature-body__item-day clip-day">
+                                August 26, 2022
+                            </span>
+                            <p class="featured-body__item-desc clip-desc">
+                                How to Use a Color Wheel The Magic Of Color...
+                            </p>
+                            <p class="featured-body__item-time clip-time">
+                                Reading time about 7 min
+                            </p>
+                        </div>
+
+                        <!-- item-02 -->
+                        <div class="featured-body__item clip__item">
+                            <img src="./assets/img/img-blog-010.jpg" alt="" />
+
+                            <span class="feature-body__item-day clip-day">
+                                August 05, 2022
+                            </span>
+                            <p class="featured-body__item-desc clip-desc">
+                                How to Become a Professional Front-End...
+                            </p>
+                            <p class="featured-body__item-time clip-time">
+                                Reading time about 10 min
+                            </p>
+                        </div>
+
+                        <!-- item-03 -->
+                        <div class="featured-body__item clip__item">
+                            <img src="./assets/img/img-blog-02.jpg" alt="" />
+
+                            <span class="feature-body__item-day clip-day">
+                                August 20, 2022
+                            </span>
+                            <p class="featured-body__item-desc clip-desc">
+                                10 Best UX Design Certification Programs...
+                            </p>
+                            <p class="featured-body__item-time clip-time">
+                                Reading time about 8 min
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- email -capture -->
+
+            <!-- returning -->
+
+            <!-- visitor -->
+
+            <!-- popups -->
+
+            <!-- WORK PROCESS -->
+
+            <!--teamwork -->
+
+            <!-- application -->
+
+            <!-- brand -->
+            <section class="brand">
+                <div class="container">
+                    <div class="brand-body">
+                        <!-- content -->
+                        <p class="brand-body__title">
+                            Standards & Technology Trusted By:
+                        </p>
+                        <div class="brand-list">
+                            <img src="./assets/img/brand-01.png" alt="" />
+                            <img src="./assets/img/brand-02.png" alt="" />
+                            <img src="./assets/img/brand-03.png" alt="" />
+                            <img src="./assets/img/brand-04.png" alt="" />
+                            <img src="./assets/img/brand-05.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- template -->
+            <section class="template">
+                <div class="container">
+                    <div class="template-body">
+                        <!-- content -->
+                        <div class="template-content">
+                            <h2 class="main-header template__header">
+                                Should we design your first popup?
+                            </h2>
+                            <p class="main-desc template-desc">
+                                Pick a template, customize as you need, and
+                                integrate with your other marketing tools.
+                            </p>
+                            <div class="hero-btn btn">
+                                <button>
+                                    <a href="#!">Start your free trial</a>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- media -->
+                        <div class="template-media">
+                            <img src="./assets/img/template-img.png" alt="" />
+                        </div>
+                        <!-- decoration -->
+                        <div class="template-decor">
+                            <img src="./assets/img/template-decor.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer">
+                <div class="container">
+                    <div class="footer-body">
+                        <a href="#!">
+                            <img src="./assets/img/Togi.png" alt="togi" />
+                        </a>
+
+                        <nav class="nav-list">
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="#!"> Products </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!"> Pricing </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!"> About </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!"> Help </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="copyright">
+                            © 2022 UIHUT | All Right Reserved
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

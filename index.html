@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- reset.css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- styles.css -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- responsive -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <!-- font-google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
+        <!-- icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Togi</title>
+    </head>
+    <body>
+        <!-- pc -->
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="header-boby">
+                        <!-- mobile -->
+
+                        <label for="check" class="menu-mobile" hidden>
+                            <i
+                                class="fa-solid fa-bars fa-xl"
+                                style="color: #fff"
+                            ></i>
+                        </label>
+
+                        <!-- ----- -->
+                        <a href="./index.html">
+                            <img src="./assets/img/Togi.png" alt="togi" />
+                        </a>
+                        <nav class="nav-list">
+                            <ul>
+                                <li class="nav-item">
+                                    <input
+                                        type="checkbox"
+                                        id="address"
+                                        hidden
+                                    />
+                                    <label for="address" href="#!">
+                                        <p>Products</p>
+
+                                        <div class="product-item">
+                                            <a href="./product.html"
+                                                >Unlayer Studio</a
+                                            >
+                                            <p>
+                                                Full featured email design
+                                                studio for designers and
+                                                agencies
+                                            </p>
+
+                                            <a href="./product.html"
+                                                >Unlayer Embed</a
+                                            >
+                                            <p>
+                                                Embeddable drag & drop editor
+                                                for developers and SaaS
+                                            </p>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./price.html"> Pricing </a>
+                                </li>
+                                <li class="nav-item">
+                                    <input
+                                        type="checkbox"
+                                        id="checkcompany"
+                                        class="company-select"
+                                        hidden
+                                    />
+                                    <label for="checkcompany">
+                                        <p>Company</p>
+
+                                        <div class="company-item">
+                                            <a href="./company.html">Careers</a>
+                                            <a href="./company.html">About</a>
+                                            <a href="./company.html">Contact</a>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./blog.html"> Blog </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header-btn btn">
+                            <button>
+                                <a href="#!">log in</a>
+                            </button>
+                            <button>
+                                <a href="#!">get started</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- tablet and mobile -->
+        <header class="mobile-header">
+            <input type="checkbox" id="check" hidden />
+            <label for="check">
+                <div class="drawer">
+                    <!-- top -->
+                    <div class="menu-mobile__top" hidden>
+                        <a href="#!">
+                            <img src="./assets/img/Togi.png" alt="togi" />
+                        </a>
+
+                        <div class="close">
+                            <i
+                                class="fa-solid fa-xmark fa-2xl"
+                                style="color: rgba(255, 255, 255, 1)"
+                            ></i>
+                        </div>
+                    </div>
+                    <!-- navbar -->
+
+                    <ul hidden>
+                        <li class="nav-item__mobile">
+                            <input type="checkbox" id="address-mobile" hidden />
+                            <label for="address-mobile" href="#!">
+                                <p>Products</p>
+
+                                <div class="product-item-mobile" hidden>
+                                    <a href="./product.html">Unlayer Studio</a>
+                                    <p>
+                                        Full featured email design studio for
+                                        designers and agencies
+                                    </p>
+
+                                    <a href="./product.html">Unlayer Embed</a>
+                                    <p>
+                                        Embeddable drag & drop editor for
+                                        developers and SaaS
+                                    </p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nav-item__mobile">
+                            <a href="./price.html"> Pricing </a>
+                        </li>
+                        <li class="nav-item__mobile">
+                            <input
+                                type="checkbox"
+                                id="checkcompany-mobile"
+                                class="company-select"
+                                hidden
+                            />
+                            <label for="checkcompany-mobile">
+                                <p>Company</p>
+
+                                <div class="company-item-mobile" hidden>
+                                    <a href="./company.html">Careers</a>
+                                    <a href="./company.html">About</a>
+                                    <a href="./company.html">Contact</a>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="nav-item__mobile">
+                            <a href="./blog.html"> Blog </a>
+                        </li>
+                    </ul>
+                    <div class="header-btn btn" hidden>
+                        <button>
+                            <a href="#!">log in</a>
+                        </button>
+                        <button>
+                            <a href="#!">get started</a>
+                        </button>
+                    </div>
+                </div>
+            </label>
+        </header>
+        <main>
+            <!-- hero -->
+            <section class="hero">
+                <div class="container">
+                    <!-- pc -->
+                    <div class="hero-body">
+                        <!-- social -->
+                        <div class="media-social">
+                            <span
+                                ><i
+                                    class="fa-brands fa-linkedin-in"
+                                    fill="currenColor"
+                                ></i
+                            ></span>
+                            <span
+                                ><i
+                                    class="fa-brands fa-facebook-f"
+                                    fill="currenColor"
+                                ></i
+                            ></span>
+                            <span
+                                ><i
+                                    class="fa-brands fa-twitter"
+                                    fill="currenColor"
+                                ></i
+                            ></span>
+
+                            <p class="media-social__text">SCROLL DOWN</p>
+                            <i
+                                class="fa-solid fa-arrow-down"
+                                style="font-size: 2rem; color: #ff974a"
+                            ></i>
+                        </div>
+                        <!-- content -->
+                        <div class="hero-content">
+                            <h1 class="hero-header">
+                                More than your average popup builder
+                            </h1>
+                            <p class="hero-desc">
+                                Everything you need—forms, sidebars, slide-ins,
+                                gamification—to turn your traffic into revenue.
+                            </p>
+                            <div class="hero-btn btn">
+                                <button>
+                                    <a href="#!">Start your free trial</a>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- media -->
+                        <div class="hero-media">
+                            <!-- mes -->
+                            <div class="hero-media__mes">
+                                <div class="hero-media__mes-item">
+                                    <span class="circle"></span>
+                                    <div class="rect">
+                                        <span class="round-l"></span>
+                                        <span class="round-r"></span>
+                                    </div>
+                                </div>
+
+                                <div class="hero-media__mes-item">
+                                    <div class="rect">
+                                        <span class="round-l"></span>
+                                        <span class="round-r"></span>
+                                    </div>
+                                </div>
+
+                                <div class="hero-media__mes-item">
+                                    <span class="circle"></span>
+                                    <div class="rect">
+                                        <span class="round-l"></span>
+                                        <span class="round-r"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- form -->
+                            <div class="form">
+                                <form action="">
+                                    <input
+                                        type="text"
+                                        id="text"
+                                        placeholder="Search people"
+                                    />
+                                    <label for="text"
+                                        ><i
+                                            class="fa-solid fa-magnifying-glass"
+                                        ></i
+                                    ></label>
+                                </form>
+                                <!-- add-friend -->
+                                <div class="hero__add-friend">
+                                    <img
+                                        src="./assets/img/avatar-02.jpg"
+                                        alt=""
+                                    />
+                                    <div class="hero__add-friend--info">
+                                        <p class="hero__add-friend--name">
+                                            Ever Obi
+                                        </p>
+                                        <p class="hero__add-friend--job">
+                                            UI/UX Designer
+                                        </p>
+                                    </div>
+                                    <!-- invite -->
+                                    <a class="hero__btn">Invite</a>
+                                </div>
+                                <!-- * -->
+                                <div class="hero__add-friend">
+                                    <img
+                                        src="./assets/img/avatar-03.jpg"
+                                        alt=""
+                                    />
+                                    <div class="hero__add-friend--info">
+                                        <p class="hero__add-friend--name">
+                                            Nicolas Gr
+                                        </p>
+                                        <p class="hero__add-friend--job">
+                                            UI/UX Designer
+                                        </p>
+                                    </div>
+                                    <!-- invite -->
+                                    <a class="hero__btn">Invite</a>
+                                </div>
+                                <!-- * -->
+                                <div class="hero__add-friend">
+                                    <img
+                                        src="./assets/img/avatar-04.jpg"
+                                        alt=""
+                                    />
+                                    <div class="hero__add-friend--info">
+                                        <p class="hero__add-friend--name">
+                                            Carpenter H.
+                                        </p>
+                                        <p class="hero__add-friend--job">
+                                            UI/UX Designer
+                                        </p>
+                                    </div>
+                                    <!-- invite -->
+                                    <a class="hero__btn">Invite</a>
+                                </div>
+                            </div>
+                            <!--img-decoration -->
+                            <img src="./assets/img/p7-hero-img.png" alt="" />
+                            <img src="./assets/img/chevrol-l.png" alt="" />
+                            <img src="./assets/img/chevrol-r.png" alt="" />
+                            <form action="" class="send">
+                                <input
+                                    type="text"
+                                    placeholder="Hi, what the process?"
+                                />
+                                <i
+                                    class="fa-sharp fa-solid fa-paperclip"
+                                    style="color: #b0b0b0"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-image"
+                                    style="color: #b0b0b0"
+                                ></i>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- tablet and mobile -->
+                </div>
+            </section>
+
+            <!-- email -capture -->
+            <section class="email-capture">
+                <div class="container">
+                    <div class="email-capture__body">
+                        <!-- media -->
+                        <div class="email-capture__media">
+                            <img src="./assets/img/capture-decor.png" alt="" />
+                            <img src="./assets/img/capture-img.svg" alt="" />
+                            <img
+                                src="./assets/img/mobile-email.png"
+                                alt=""
+                                hidden
+                            />
+                        </div>
+                        <!-- content -->
+                        <div class="email-capture__content">
+                            <p class="figcaption">email capture</p>
+                            <h2 class="main-header email-capture__header">
+                                Multiple popups for multiple goals
+                            </h2>
+                            <p class="main-desc p1">
+                                From email capture to reducing cart abandonment,
+                                create multiple.
+                            </p>
+                            <p class="main-desc">
+                                From email capture to reducing cart abandonment,
+                                create multiple, personalized popups for
+                                different groups of visitors. From email capture
+                                to reducing cart abandonment, create multiple,
+                                personalized popups for different groups of
+                                visitors.
+                            </p>
+                            <div class="hero-btn btn">
+                                <button>
+                                    <a href="#!">Start your free trial</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- returning -->
+            <section class="returning">
+                <div class="container">
+                    <div class="returning-body">
+                        <p class="figcaption">Returning subscribers</p>
+                        <h2 class="main-header returning__header">
+                            Turn new visitors into subscribers
+                        </h2>
+                        <div class="returning-body__plan-list">
+                            <!-- item-01 -->
+                            <div class="returning-body__plan-item">
+                                <span class="returning--icon">
+                                    <img src="./assets/img/email.png" alt="" />
+                                </span>
+                                <div class="par">
+                                    <p class="returning--icon__title">
+                                        Collect more emails
+                                    </p>
+                                    <p class="main-desc returning-desc">
+                                        Grow a segmented email list with quality
+                                        subscribers.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- item-02 -->
+                            <div class="returning-body__plan-item">
+                                <span class="returning--icon">
+                                    <img src="./assets/img/per.png" alt="" />
+                                </span>
+                                <div class="par">
+                                    <p class="returning--icon__title">
+                                        Increase your sales
+                                    </p>
+                                    <p class="main-desc returning-desc">
+                                        Sell more to your website visitors and
+                                        make the most of your traffic.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- item-03 -->
+                            <div class="returning-body__plan-item">
+                                <span class="returning--icon">
+                                    <img src="./assets/img/peopel.png" alt="" />
+                                </span>
+                                <div class="par">
+                                    <p class="returning--icon__title">
+                                        Get in touch with visitors
+                                    </p>
+                                    <p class="main-desc returning-desc">
+                                        Send each visitor to the products or
+                                        pages they should see.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- item-04 -->
+                            <div class="returning-body__plan-item">
+                                <span class="returning--icon">
+                                    <img src="./assets/img/around.png" alt="" />
+                                </span>
+                                <div class="par">
+                                    <p class="returning--icon__title">
+                                        Guide visitors around
+                                    </p>
+                                    <p class="main-desc returning-desc">
+                                        Invite visitors to contact you for
+                                        support, feedback, or a sales call.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- visitor -->
+            <section class="visitor">
+                <div class="container">
+                    <div class="visitor-body">
+                        <p class="figcaption">Meet each visitor</p>
+                        <h2 class="main-header visitor__header">
+                            Help subscribers make their first buy
+                        </h2>
+                        <div class="visitor-body__media">
+                            <!-- achivement -->
+                            <div class="visitor-body__media-box">
+                                <!-- item-01 -->
+                                <div class="achivement-item">
+                                    <span class="achivement-item__icon">
+                                        <img
+                                            src="./assets/img/achive-01.png"
+                                            alt=""
+                                        />
+                                    </span>
+                                    <p class="achivement-item__title">
+                                        Page visits
+                                    </p>
+                                    <p class="achivement-item__data">1228</p>
+                                    <p class="achivement-item__desc">
+                                        67% from the last email sent
+                                    </p>
+                                </div>
+
+                                <!-- item-02 -->
+                                <div class="achivement-item">
+                                    <span class="achivement-item__icon">
+                                        <img
+                                            src="./assets/img/achive-02.png"
+                                            alt=""
+                                        />
+                                    </span>
+                                    <p class="achivement-item__title">
+                                        Email sent
+                                    </p>
+                                    <p class="achivement-item__data">1397</p>
+                                    <p class="achivement-item__desc">
+                                        67% from the last email sent
+                                    </p>
+                                </div>
+
+                                <!-- item-03 -->
+                                <div class="achivement-item">
+                                    <span class="achivement-item__icon">
+                                        <img
+                                            src="./assets/img/achive-03.png"
+                                            alt=""
+                                        />
+                                    </span>
+                                    <p class="achivement-item__title">
+                                        Product bought
+                                    </p>
+                                    <p class="achivement-item__data">631</p>
+                                    <p class="achivement-item__desc">
+                                        17% from the last email sent
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- info -->
+                            <div class="visitor-body__media-box">
+                                <!-- item-01 -->
+                                <div class="info-item">
+                                    <span class="info-item__img">
+                                        <img
+                                            src="./assets/img/info-01.png"
+                                            alt=""
+                                        />
+                                    </span>
+                                    <div class="info-item__content">
+                                        <p class="info-item__content-title">
+                                            Applicant status
+                                        </p>
+                                        <p class="info-item__content-desc">
+                                            Applying
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- item-02 -->
+                                <div class="info-item">
+                                    <span class="info-item__img">
+                                        <img
+                                            src="./assets/img/info-02.png"
+                                            alt=""
+                                        />
+                                    </span>
+                                    <div class="info-item__content">
+                                        <p class="info-item__content-title">
+                                            Opened email
+                                        </p>
+                                        <p class="info-item__content-desc">
+                                            Xmas Newsletter
+                                        </p>
+                                    </div>
+                                    <div class="circle">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                                <!-- item-03 -->
+                                <div class="info-item">
+                                    <span class="info-item__img">
+                                        <img
+                                            src="./assets/img/info-03.png"
+                                            alt=""
+                                        />
+                                    </span>
+                                    <div class="info-item__content">
+                                        <p class="info-item__content-title">
+                                            Follow up
+                                        </p>
+                                        <p class="info-item__content-desc">
+                                            Follow status
+                                        </p>
+                                    </div>
+                                    <div class="circle">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- popups -->
+            <section class="popups">
+                <div class="container">
+                    <div class="popups-body">
+                        <p class="figcaption">stunning popups</p>
+                        <h2 class="main-header popups__header">
+                            Sell more to your existing customers
+                        </h2>
+
+                        <!-- parameter -->
+                        <div class="popups-parameter">
+                            <!-- item-01 -->
+                            <div class="popups-parameter-item">
+                                <img src="./assets/img/popups-01.png" alt="" />
+                                <p class="result">10K+</p>
+                                <p class="popups-parameter__item-desc">
+                                    Drag-and- drop
+                                </p>
+                            </div>
+
+                            <!-- item-02 -->
+                            <div class="popups-parameter-item">
+                                <img src="./assets/img/popups-02.png" alt="" />
+                                <p class="result">75+</p>
+                                <p class="popups-parameter__item-desc">
+                                    popup templates
+                                </p>
+                            </div>
+
+                            <!-- item-03 -->
+                            <div class="popups-parameter-item">
+                                <img src="./assets/img/popups-03.png" alt="" />
+                                <p class="result">120+</p>
+                                <p class="popups-parameter__item-desc">
+                                    Customize elements
+                                </p>
+                            </div>
+
+                            <!-- item-04 -->
+                            <div class="popups-parameter-item">
+                                <img src="./assets/img/popups-04.png" alt="" />
+                                <p class="result">312+</p>
+                                <p class="popups-parameter__item-desc">
+                                    Edit mobile separately
+                                </p>
+                            </div>
+                        </div>
+
+                        <img src="./assets/img/capture-decor.png" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- WORK PROCESS -->
+            <section class="work">
+                <div class="container">
+                    <div class="work-body">
+                        <p class="figcaption">WORK PROCESS</p>
+                        <h2 class="main-header work__header">
+                            The most user-friendly popup builder ever made
+                        </h2>
+
+                        <!-- courses -->
+                        <div class="work-body__courses">
+                            <!-- item-01 -->
+                            <div class="work-body__courses-item">
+                                <span class="courses-img">
+                                    <img
+                                        src="./assets/img/work-01.png"
+                                        alt=""
+                                    />
+                                </span>
+                                <h4 class="courses-title">Design</h4>
+                                <p class="courses-desc">
+                                    Drag, drop, add, and remove. Customize your
+                                    popups as little or as much as you need.
+                                </p>
+                            </div>
+
+                            <!-- item-02 -->
+                            <div class="work-body__courses-item">
+                                <span class="courses-img">
+                                    <img
+                                        src="./assets/img/work-02.png"
+                                        alt=""
+                                    />
+                                </span>
+                                <h4 class="courses-title">Target</h4>
+                                <p class="courses-desc">
+                                    Set up advanced targeting options with one
+                                    click and show your popups.
+                                </p>
+                            </div>
+
+                            <!-- item-03 -->
+                            <div class="work-body__courses-item">
+                                <span class="courses-img">
+                                    <img
+                                        src="./assets/img/work-03.png"
+                                        alt=""
+                                    />
+                                </span>
+                                <h4 class="courses-title">Understand</h4>
+                                <p class="courses-desc">
+                                    Make informed decisions based on how your
+                                    visitors interact with your popups.
+                                </p>
+                            </div>
+
+                            <!-- item-04 -->
+                            <div class="work-body__courses-item">
+                                <span class="courses-img">
+                                    <img src="./assets/img/peopel.png" alt="" />
+                                </span>
+                                <h4 class="courses-title">Design</h4>
+                                <p class="courses-desc">
+                                    Drag, drop, add, and remove. Customize your
+                                    popups as little or as much as you need.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--teamwork -->
+            <section class="teamwork">
+                <div class="container">
+                    <div class="teamwork-body">
+                        <!-- media -->
+                        <div class="teamwork-media">
+                            <img src="./assets/img/teamwork-01.png" alt="" />
+                            <div class="teamwork-media-s">
+                                <p>Avg. Revenue</p>
+                                <span></span>
+                                <p>Total Revenue</p>
+                                <span></span>
+                            </div>
+                            <img
+                                src="./assets/img/teamwork-mobile.png"
+                                alt=""
+                                hidden
+                            />
+                        </div>
+
+                        <!-- content -->
+                        <div class="teamwork-content">
+                            <p class="figcaption">TEAMWORK</p>
+                            <h2 class="main-header teamwork__header">
+                                Design stunning popups (without a designer)
+                            </h2>
+                            <p class="main-desc teamwork-desc">
+                                Drag, drop, add, and remove. Customize your
+                                popups as little or as much as you need. Create
+                                slide-ins and forms that match the look and feel
+                                of your site (even if you’re not a designer.).
+                                Drag, drop, add, and remove. Customize your
+                                popups as little or as much as you need.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- brand -->
+            <section class="brand">
+                <div class="container">
+                    <div class="brand-body">
+                        <!-- content -->
+                        <p class="brand-body__title">
+                            Standards & Technology Trusted By:
+                        </p>
+                        <div class="brand-list">
+                            <img src="./assets/img/brand-01.png" alt="" />
+                            <img src="./assets/img/brand-02.png" alt="" />
+                            <img src="./assets/img/brand-03.png" alt="" />
+                            <img src="./assets/img/brand-04.png" alt="" />
+                            <img src="./assets/img/brand-05.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- template -->
+            <section class="template">
+                <div class="container">
+                    <div class="template-body">
+                        <!-- content -->
+                        <div class="template-content">
+                            <h2 class="main-header template__header">
+                                Should we design your first popup?
+                            </h2>
+                            <p class="main-desc template-desc">
+                                Pick a template, customize as you need, and
+                                integrate with your other marketing tools.
+                            </p>
+                            <div class="hero-btn btn">
+                                <button>
+                                    <a href="#!">Start your free trial</a>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- media -->
+                        <div class="template-media">
+                            <img src="./assets/img/template-img.png" alt="" />
+                        </div>
+                        <!-- decoration -->
+                        <div class="template-decor">
+                            <img src="./assets/img/template-decor.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer">
+                <div class="container">
+                    <div class="footer-body">
+                        <a href="#!">
+                            <img src="./assets/img/Togi.png" alt="togi" />
+                        </a>
+
+                        <nav class="nav-list">
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="#!"> Products </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!"> Resources </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!"> About </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!"> Help </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="copyright">
+                            © 2022 UIHUT | All Right Reserved
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
